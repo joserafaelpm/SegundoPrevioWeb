@@ -19,7 +19,7 @@ public class Tienda implements Serializable {
 
 	private String clave;
 
-	@Lob
+	@Lob @Column(name = "descripcion",  columnDefinition="TEXT")
 	private String descripcion;
 
 	private String email;

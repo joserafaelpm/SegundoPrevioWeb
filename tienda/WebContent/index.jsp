@@ -19,12 +19,12 @@
 			<h5 class="section-title h1">SERVICIOS</h5>
 			<div class="row  justify-content-center pb-5">
 				<div class="col-xs-12 col-sm-6 col-md-3">
-					<a href="ClienteServlet?action=login"
+					<a href="${pageContext.request.contextPath}/login.jsp"
 						class="btn btn-lg btn-primary btn-block text-uppercase font-weight-bold mb-2 text-light"
 						type="submit" method="POST">Login</a>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-3 align-self-center">
-					<a href="ClienteServlet?action=registrar"
+					<a href="${pageContext.request.contextPath}/registro.jsp"
 						class="btn btn-lg btn-primary btn-block text-uppercase font-weight-bold mb-2 text-light"
 						type="submit" method="POST">Registrate</a>
 				</div>

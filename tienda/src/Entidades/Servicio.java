@@ -16,7 +16,7 @@ public class Servicio implements Serializable {
 	@Id
 	private int id;
 
-	@Lob
+	@Lob @Column(name = "descripcion",  columnDefinition="TEXT")
 	private String descripcion;
 
 	private String nombre;

@@ -1,8 +1,6 @@
 package Controlador;
 
 import java.io.IOException;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -16,7 +14,7 @@ import Modelo.ClienteDAO;
 /**
  * Servlet implementation class ClienteServlet
  */
-@WebServlet("/ClienteServlet")
+@WebServlet("/ClienteServlet/*")
 public class ClienteServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private ClienteDAO cDAO;
@@ -81,8 +79,8 @@ public class ClienteServlet extends HttpServlet {
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		String nombre = request.getParameter("nombre");
-		String email = request.getParameter("heroe");
-		String clave = request.getParameter("fechaNacimiento");
+		String email = request.getParameter("email");
+		String clave = request.getParameter("clave");
 		Cliente c = new Cliente();
 		c.setNombre(nombre);
 		c.setEmail(email);
@@ -119,8 +117,8 @@ public class ClienteServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		Integer id = Integer.parseInt(request.getParameter("id"));
 		String nombre = request.getParameter("nombre");
-		String email = request.getParameter("heroe");
-		String clave = request.getParameter("fechaNacimiento");
+		String email = request.getParameter("email");
+		String clave = request.getParameter("clave");
 		Cliente c = new Cliente();
 		c.setId(id);
 		c.setNombre(nombre);

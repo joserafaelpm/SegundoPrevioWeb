@@ -10,83 +10,151 @@
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
 	integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
 	crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="css/registro.css">
+
+<link rel="stylesheet" type="text/css" href="css/card.css">
 </head>
 <body>
-	<div class="container-fluid">
-		<div class="row no-gutter">
-			<div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
-			<div class="col-md-8 col-lg-6">
-				<div class="login d-flex align-items-center py-5">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-9 col-lg-8 mx-auto">
-								<h3 class="login-heading mb-4">Registro de Tienda</h3>
-								<form>
-									<div class="form-label-group">
-										<input type="text" id="inputNombre" class="form-control"
-											placeholder="Nombre" required autofocus> <label
-											for="inputNombre">Nombre</label>
-									</div>
-
-									<div class="form-label-group">
-										<input type="text" id="inputLema" class="form-control"
-											placeholder="Lema" required autofocus> <label
-											for="inputLema">Lema</label>
-									</div>
-
-									<div class="form-label-group">
-										<textarea id="inputDescripcion" class="form-control"
-											placeholder="Descripcion" required autofocus></textarea>
-										<label for="inputDescripcion">Descripción</label>
-									</div>
-
-									<div class="form-label-group">
-										<input type="email" id="inputEmail" class="form-control"
-											placeholder="Email address" required autofocus> <label
-											for="inputEmail">Email</label>
-									</div>
-
-									<div class="form-label-group">
-										<input type="password" id="inputPassword" class="form-control"
-											placeholder="Password" required> <label
-											for="inputPassword">Password</label>
-									</div>
-
-									<div class="form-label-group">
-										<input type="input" id="inputPropietario" class="form-control"
-											placeholder="Propietario" required> <label
-											for="inputPropietario">Propietario</label>
-									</div>
-
-									<div class="form-label-group">
-										<input type="input" id="inputFacebook" class="form-control"
-											placeholder="Facebook" required> <label
-											for="inputFacebook">Facebook</label>
-									</div>
-
-									<div class="form-label-group">
-										<input type="input" id="inputWeb" class="form-control"
-											placeholder="Web" required> <label for="inputWeb">Web</label>
-									</div>
-
-									<div class="form-label-group">
-										<input type="input" id="inputImagen" class="form-control"
-											placeholder="Imagen" required> <label
-											for="inputImagen">Imagen</label>
-									</div>
-
-									<button
-										class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2"
-										type="submit">Registrar</button>
-								</form>
-							</div>
+<jsp:useBean class="Modelo.TiendaDAO" id="tiendaDAO"></jsp:useBean>
+	<section id="team" class="pb-5">
+		<div class="container">
+			<h5 class="section-title h1">SERVICIOS DE ${nombreTienda}</h5>
+			<div class="row">
+				<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+					<div class="card h-100">
+						<a href="#"><img class="card-img-top"
+							src="http://placehold.it/700x400" alt=""></a>
+						<div class="card-body">
+							<h4 class="card-title">
+								<a href="#">Servicio Uno</a>
+							</h4>
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur
+								adipisicing elit. Amet numquam aspernatur eum quasi sapiente
+								nesciunt? Voluptatibus sit, repellat sequi itaque deserunt,
+								dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+					<div class="card h-100">
+						<a href="#"><img class="card-img-top"
+							src="http://placehold.it/700x400" alt=""></a>
+						<div class="card-body">
+							<h4 class="card-title">
+								<a href="#">Servicio Dos</a>
+							</h4>
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Nam viverra euismod odio, gravida pellentesque
+								urna varius vitae.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+					<div class="card h-100">
+						<a href="#"><img class="card-img-top"
+							src="http://placehold.it/700x400" alt=""></a>
+						<div class="card-body">
+							<h4 class="card-title">
+								<a href="#">Servicio Tres</a>
+							</h4>
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur
+								adipisicing elit. Quos quisquam, error quod sed cumque, odio
+								distinctio velit nostrum temporibus necessitatibus et facere
+								atque iure perspiciatis mollitia recusandae vero vel quam!</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+					<div class="card h-100">
+						<a href="#"><img class="card-img-top"
+							src="http://placehold.it/700x400" alt=""></a>
+						<div class="card-body">
+							<h4 class="card-title">
+								<a href="#">Servicio Cuatro</a>
+							</h4>
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Nam viverra euismod odio, gravida pellentesque
+								urna varius vitae.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+					<div class="card h-100">
+						<a href="#"><img class="card-img-top"
+							src="http://placehold.it/700x400" alt=""></a>
+						<div class="card-body">
+							<h4 class="card-title">
+								<a href="#">Servicio Cinco</a>
+							</h4>
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Nam viverra euismod odio, gravida pellentesque
+								urna varius vitae.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+					<div class="card h-100">
+						<a href="#"><img class="card-img-top"
+							src="http://placehold.it/700x400" alt=""></a>
+						<div class="card-body">
+							<h4 class="card-title">
+								<a href="#">Servicio Seis</a>
+							</h4>
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur
+								adipisicing elit. Itaque earum nostrum suscipit ducimus nihil
+								provident, perferendis rem illo, voluptate atque, sit eius in
+								voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+					<div class="card h-100">
+						<a href="#"><img class="card-img-top"
+							src="http://placehold.it/700x400" alt=""></a>
+						<div class="card-body">
+							<h4 class="card-title">
+								<a href="#">Servicio Siete</a>
+							</h4>
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Nam viverra euismod odio, gravida pellentesque
+								urna varius vitae.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+					<div class="card h-100">
+						<a href="#"><img class="card-img-top"
+							src="http://placehold.it/700x400" alt=""></a>
+						<div class="card-body">
+							<h4 class="card-title">
+								<a href="#">Servicio Ocho</a>
+							</h4>
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur
+								adipisicing elit. Eius adipisci dicta dignissimos neque animi
+								ea, veritatis, provident hic consequatur ut esse! Commodi ea
+								consequatur accusantium, beatae qui deserunt tenetur ipsa.</p>
 						</div>
 					</div>
 				</div>
 			</div>
+			<!-- /.row -->
+
+			<!-- Pagination -->
+			<ul class="pagination justify-content-center">
+				<li class="page-item"><a class="page-link" href="#"
+					aria-label="Previous"> <span aria-hidden="true">&laquo;</span>
+						<span class="sr-only">Anterior</span>
+				</a></li>
+				<li class="page-item"><a class="page-link" href="#">1</a></li>
+				<li class="page-item"><a class="page-link" href="#">2</a></li>
+				<li class="page-item"><a class="page-link" href="#">3</a></li>
+				<li class="page-item"><a class="page-link" href="#"
+					aria-label="Next"> <span aria-hidden="true">&raquo;</span> <span
+						class="sr-only">Siguiente</span>
+				</a></li>
+			</ul>
+
 		</div>
-	</div>
+	</section>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
 		crossorigin="anonymous"></script>
