@@ -74,6 +74,7 @@ public class ClienteServlet extends HttpServlet {
 	protected void login(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		request.getRequestDispatcher("login.jsp").forward(request, response);
 	}
 
 	protected void registrar(HttpServletRequest request, HttpServletResponse response)
