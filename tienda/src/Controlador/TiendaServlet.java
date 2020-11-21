@@ -137,7 +137,7 @@ public class TiendaServlet extends HttpServlet {
 		t.setPropietario(propietario);
 		t.setWeb(web);
 		tDAO.update(t);
-		request.getRequestDispatcher("servicios.jsp").forward(request, response);
+		request.getRequestDispatcher("registro.jsp").forward(request, response);
 	}
 
 	protected void showForm(HttpServletRequest request, HttpServletResponse response)

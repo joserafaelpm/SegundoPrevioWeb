@@ -86,7 +86,7 @@ public class ClienteServlet extends HttpServlet {
 		c.setEmail(email);
 		c.setClave(clave);
 		cDAO.insert(c);
-		request.getRequestDispatcher("registro.jsp").forward(request, response);
+		request.getRequestDispatcher("login.jsp").forward(request, response);
 	}
 
 	protected void buscar(HttpServletRequest request, HttpServletResponse response)
@@ -98,7 +98,7 @@ public class ClienteServlet extends HttpServlet {
 		Cliente aux = cDAO.find(c.getId());
 		System.out.println(aux.getId());
 		request.getSession().setAttribute("cliente", aux);
-		request.getRequestDispatcher("registro.jsp").forward(request, response);
+		request.getRequestDispatcher("registroCliente.jsp").forward(request, response);
 		// response.sendRedirect("registroEmpleado");
 	}
 
